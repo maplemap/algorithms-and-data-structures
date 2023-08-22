@@ -13,8 +13,6 @@ const bubbleSort = (array) => {
 				array[i + 1] = currenValue;
 				array[i] = nextValue;
 			}
-
-			count++;
 		}
 
 		unsortedElements -= 1;
@@ -36,7 +34,7 @@ const sortedRandomArray = bubbleSort(randomArray);
 
 const randomArrayT1 = performance.now();
 console.log(`Array length: ${randomArray.length}. Time of working in milliseconds: ${(randomArrayT1 - randomArrayT0).toFixed(2)}`);
-console.log(sortedRandomArray)
+console.log(sortedRandomArray);
 
 // bubble sort on sorted array
 const sortedArrayT0 = performance.now();
@@ -45,5 +43,4 @@ const sortedOfSortedArray = bubbleSort(sortedArray);
 
 const sortedArrayT1 = performance.now();
 console.log(`Array length: ${sortedArray.length}. Time of working in milliseconds: ${(sortedArrayT1 - sortedArrayT0).toFixed(2)}`);
-console.log(sortedOfSortedArray)
-
+console.log(sortedOfSortedArray);
